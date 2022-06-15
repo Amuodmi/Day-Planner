@@ -11,40 +11,33 @@ var displayCurrentTime = document.querySelector("#currentDay");
 var currentTime = moment();
 displayCurrentTime.textContent = currentTime.format("dddd MMMM Do YYYY");
 
-//loads the page/ planner//
-function loadPlanner(){
-
-  var timeSlots = getElementsByClassName("task");
-
-}
 
 
+//sets the colours for the time slots whether due, overdue, or pastdue//
 var colourTimeSlots = function () {
-
-    var timeSlots = getElementsByClassName("task");
+  debugger
+    var timeSlots = document.getElementsByClassName("task");
     var timeNow = moment().hour();
- for (var i = 0; i < timeSlots.length; i++);
 
-        var timeSlot = timeBlocks[i];
-        var hourTimeSlot = parseInt(timeBlock.parentElement.id);
+    for (var hour = 9; hour <= 21; hour++) {
 
-        if (hourTimeSlot === hour) {
+    var timeSlot = timeSlots[hour-9];
+    //var hourTimeSlot = parseInt(timeSlot.parentElement.id);
+    var currentHour = timeNow;
+
+        if (currentHour === hour) {
           timeSlot.classList.add("present");
       }
-      else if (hourTimeSlot < hour) {
+      else if (currentHour > hour) {
           timeSlot.classList.add("past");
       }
-      else if (hourTimeSlot > hour) {
+      else if (currentHour < hour) {
           timeSlot.classList.add("future")
       }
 }
+}
 
+colourTimeSlots();
 
-
-window.onload = function() {
-  //will need to ensure is loading current day
-  //will need to load time block colours
-  //will need to load the schedule
-};
 
   
