@@ -7,7 +7,7 @@ the hospital I work at has become a bit overwhelming so I was not able to give a
 
 I will be coming back to this to complete it, but for now this is all I have. 
 
-![Alt text](./assets/image/screenshot0616.jpg?raw=true "Optional Title")
+![Alt text](/assets/image/screenshot0616.jpg?raw=true "Optional Title")
 
 Link to deployed website: 
 https://amuodmi.github.io/Day-Planner/
