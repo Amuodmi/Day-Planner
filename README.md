@@ -7,7 +7,7 @@ the hospital I work at has become a bit overwhelming so I was not able to give a
 
 I will be coming back to this to complete it, but for now this is all I have. 
 
-![temporary website](.ud/assets/image/screenshot0616.png?raw=true "Screenshot")
+![temporary website](https://github.com/Amuodmi/Day-Planner/blob/546658193878ecf66ae2e5f8a545b1e7e8105389/assets/image/Screen%20Shot%202022-06-16%20at%2022.33.32.png)
 
 Link to deployed website: 
 https://amuodmi.github.io/Day-Planner/
