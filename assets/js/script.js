@@ -42,15 +42,20 @@ var colourTimeSlots = function (event) {
 
 colourTimeSlots();
 
+
 //saves data to local storage as a string
-var saveTasks = function() {
-  localStorage.setItem("task", JSON.stringify(tasksArr));
-};
+var saveTasks = JSON.stringify(task);
+  localStorage.setItem("task", saveTasks);
+
+  // var saveTasks = function() {
+  //   localStorage.setItem("tasks", JSON.stringify(tasks));
+  // };
+
 
 
 //load tasks from local storage
 var loadTasks = function() {
-  var savedTasks = JSON.parse(localStorage.getItem("task"));
+  var savedTasks = JSON.parse(localStorage.getItem("taskArr"));
   console.log(loadTasks);
 
   if (!savedTasks){
@@ -81,7 +86,6 @@ if (!tasksArr) {
   };
 }
 };
-
 
 
 
