@@ -44,7 +44,7 @@ var colourTimeSlots = function () {
 colourTimeSlots();
 
 
-//saves data to local storage as a string
+// saves data to local storage as a string
 
   var saveTasks = function() {
     localStorage.setItem("tasks", JSON.stringify(tasks));
